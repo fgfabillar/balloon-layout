@@ -1,0 +1,65 @@
+/* Tablet */
+@media (max-width: 991px) {
+
+    /* Content */
+    .balloon-container{
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: 350px 350px 350px 350px;
+        grid-template-areas:
+        "A A A A    E E E E     E E E E"
+        "J J J J    D D D D     D D D D" 
+        "B B B B    B B B B     F F F F"
+        "G G G G    H H H H     H H H H";
+    }
+    
+    .A{
+        grid-area: A;
+    }
+    
+    .E{
+        grid-area: E;
+    }
+    
+    .J{
+        grid-area: J;
+    }
+    
+    .D{
+        grid-area: D;
+    }
+    
+    .B{
+        grid-area: B;
+    }
+    
+    .F{
+        grid-area: F;
+    }
+    
+    .G{
+        grid-area: G;
+    }
+    
+    .H{
+        grid-area: H;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 768px) {
+
+    /* Content */
+    .balloon-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "A"
+        "E"
+        "J"
+        "D"
+        "B"
+        "F"
+        "G"
+        "H";
+    }
+}
